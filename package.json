@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "\"first project\"",
   "main": "index.js",
-  "scripts" : {
+  "scripts": {
     "precompress": "{{ executes BEFORE the `compress` script }}",
     "compress": "{{ run command to compress files }}",
     "postcompress": "{{ executes AFTER `compress` script }}",
@@ -24,5 +24,8 @@
   "homepage": "https://github.com/dashapatrusheva/hexlet-js#readme",
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.0"
   }
 }
