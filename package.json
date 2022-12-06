@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "\"first project\"",
   "main": "index.js",
-  "scripts": {
+  "scripts" : {
+    "precompress": "{{ executes BEFORE the `compress` script }}",
+    "compress": "{{ run command to compress files }}",
+    "postcompress": "{{ executes AFTER `compress` script }}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dashapatrusheva/hexlet-js.git"
+    "type": "module",
+    "url": "https://github.com/dashapatrusheva/hexlet-js.git"
   },
   "keywords": [
     "\"pdv\""
@@ -18,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/dashapatrusheva/hexlet-js/issues"
   },
-  "homepage": "https://github.com/dashapatrusheva/hexlet-js#readme"
+  "homepage": "https://github.com/dashapatrusheva/hexlet-js#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
